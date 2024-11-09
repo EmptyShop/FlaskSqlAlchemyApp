@@ -1,0 +1,15 @@
+<form action="{{ action }}" method="POST" class="card bg-dark text-light">
+    {{ form.hidden_tag() }}    
+    <div class="card-body pt-4">
+        <div class="mb-3">
+            {{ form.fullname.label }}{{ form.fullname }}
+        </div>
+        <div class="mb-3">
+            {{ form.email.label }}{{ form.email }}
+        </div>
+        <div class="mb-3">
+            {{ form.phone.label }}{{ form.phone }}
+        </div>
+        {{ form.submit }}
+    </div>
+</form>
